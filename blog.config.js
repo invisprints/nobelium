@@ -35,7 +35,7 @@ const BLOG = {
     // support provider: gitalk
     provider: 'gitalk', // leave it empty if you don't need any comment plugin
     gitalkConfig: {
-      repo: 'my_blog', // The repository of store comments
+      repo: 'nobelium', // The repository of store comments
       owner: 'invisprints',
       admin: ['invisprints'],
       clientID: '724370a04ff0a13a52df',
