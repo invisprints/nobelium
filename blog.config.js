@@ -12,6 +12,7 @@ const BLOG = {
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
   since: 2021, // if leave this empty, current year will be used.
   postsPerPage: 7,
+  sortByDate: false,
   showAbout: true, // WIP
   showArchive: true, // WIP
   socialLink: 'https://twitter.com/invisprints',
@@ -41,6 +42,14 @@ const BLOG = {
       clientID: '724370a04ff0a13a52df',
       clientSecret: '08608b259684ac907fcb1edb04e5713aca7d2841',
       distractionFreeMode: false
+    },
+    utterancesConfig: {
+      repo: ''
+    },
+    cusdisConfig: {
+      appId: '', // data-app-id
+      host: 'https://cusdis.com', // data-host, change this if you're using self-hosted version
+      scriptSrc: 'https://cusdis.com/js/cusdis.es.js' // change this if you're using self-hosted version
     }
   }
 }
