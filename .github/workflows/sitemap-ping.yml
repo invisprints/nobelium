@@ -1,0 +1,18 @@
+name: ping-google
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+  
+jobs:
+  ping-google:
+    runs-on: ubuntu-latest
+    steps:
+      - name: wait for build
+        run: sleep 3m
+      - name: ping google to update sitemap.xml
+        run: curl http://www.google.com/ping?sitemap=https://invisprints.vercel.app/sitemap.xml
+#      - uses: atymic/sitemap-ping-action@master
+#        with:
+#            sitemap-url: ${{ secrets.SITEMAP_URL }}
